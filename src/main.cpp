@@ -429,7 +429,7 @@ void closeSideRush(){
 
 
 void autonomous() {
-//check
+//checks
 	farSide();
 	//closeSideAWP();
 	//skills();
