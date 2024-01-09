@@ -241,36 +241,36 @@ void farSideSafe(){
 	chassis.waitUntil(10);
 	powerIntake(127);
 	chassis.waitUntilDone();
-	powerIntake(80);
+	powerIntake(20);
 	chassis.moveTo(38, -57, 350, 1200, false, 20); // getting back from getting 1st triball
 	chassis.turnTo(53,-50, 600); //outtake 1st ball
 	chassis.waitUntilDone();
 	powerIntake(-127); 
-	delay(200);
-	powerIntake(0);
 	delay(400);
+	powerIntake(0);
+	delay(200);
 	chassis.turnTo(0,-59, 650);
 	chassis.moveTo(4.5, -59, 270, 1100, true, 20); //getting neutral ball
 	chassis.waitUntil(5);
 	powerIntake(127);
 	chassis.waitUntilDone();
-	powerIntake(50);
+	powerIntake(20);
 	chassis.moveTo(9, -59, 271, 300, false, 50);
 	chassis.turnTo(40,-59, 700, true);
 	chassis.waitUntilDone();
 	powerIntake(0);
-	chassis.moveTo(51, -50, 45, 1500, true, 20);
+	chassis.moveTo(50.1, -51, 45, 1500, true, 20);
 	chassis.waitUntilDone();
-	wing(1);
-	chassis.turnTo(56,-24, 500);
+	wing(1); // descore
+	chassis.turnTo(56,-20, 500);
 	chassis.waitUntilDone();
 	wing(0);
-	chassis.moveTo(57, -20, 355, 1200, true, 50);
-	chassis.moveTo(62, -46, 0, 400, false, 20);
-	chassis.moveTo(62, -18, 355, 800, true, 50);
+	chassis.moveTo(61, 0, 355, 1100, true, 50);
+	chassis.moveTo(62, -50, 0, 600, false, 20);
+	chassis.moveTo(62, -10, 355, 800, true, 50);
 	chassis.moveTo(62, -43, 0, 400, false, 20);
 	chassis.turnTo(6.5,-24.5, 700);
-	chassis.moveTo(6, -24.5, 290, 1100, true, 30, 0.3);
+	chassis.moveTo(6, -19.5, 290, 1400, true, 30, 0.3);
 	chassis.waitUntil(15);
 	powerIntake(127);
 	chassis.waitUntilDone();
@@ -278,12 +278,12 @@ void farSideSafe(){
 	chassis.turnTo(48,-11, 700);
 	chassis.waitUntilDone();
 	powerIntake(0);
-	chassis.moveTo(50, -12, 90, 1500, true, 30, 0.3);
+	chassis.moveTo(50, -9, 90, 1000, true, 30, 0.3);
 	chassis.waitUntil(1);
 	wing(1);
 	chassis.waitUntilDone();
 	wing(0);
-	chassis.moveTo(30, -12, 90, 1500, false, 30, 0.3);
+	chassis.moveTo(30, -12, 90, 1500, false, 10, 0.3);
 	/*
 	chassis.follow(safe2_txt, 15, 3000)
 	chassis.waitUntil(40);
